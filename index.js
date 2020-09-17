@@ -6,6 +6,6 @@ app.get('/nbaData', (req,res) => {
     res.json(nbaInput);
     
 })
-app.listen(8080, () => {
+app.listen(process.env.PORT || 8080, () => {
     console.log("Listening")
 })
